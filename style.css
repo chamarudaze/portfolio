@@ -1,0 +1,167 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 900px;
+}
+
+body{
+    background-color: #FAFAFA;
+    color: #5A5255;
+    font-family: 'Helvetica Neue' , Arial , sans-serif;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.site-header{
+    position: sticky;
+    top: 0;
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 6px 0 4px;
+    z-index: 1000;
+}
+
+.site-logo{
+    width: 110px;
+    height: auto;
+    display: inline-block;
+}
+
+.logo-link:hover{
+    opacity: 0.8;
+}
+
+.sticky-nav{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sticky-nav a{
+    text-decoration: none;
+    color: #E8A2B8;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 2px 8px;
+    transition: color 0.3s;
+}
+
+.sticky-nav a:hover{
+    color: #B06579;
+}
+
+h1{
+    color: #5A5255;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 5%;
+    letter-spacing: 2px;
+}
+
+h2{
+    color: #FAFAFA;
+    background-color:#E8A2B8 ;
+    font-size: 22px;
+    padding: 5px 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    list-style-type: none;     /* 先頭の「・」を一旦消す */
+    position: relative;
+    padding-left: 20px;
+}
+
+/* ここからCONTACT フォーム用スタイル */
+
+.contact-lead {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border: 1px solid #F0D0D8;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #5A5255;
+}
+
+.required {
+  background-color: #E8A2B8;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+
+/* 入力欄（名前・メール・自由記述テキストエリア） */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #FAFAFA;
+  color: #5A5255;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #E8A2B8;
+  background-color: #FFFFFF;
+}
+
+/* 送信ボタン */
+.form-btn-wrapper {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.submit-btn {
+  background-color: #E8A2B8;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 45px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.submit-btn:hover {
+  opacity: 0.85;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}

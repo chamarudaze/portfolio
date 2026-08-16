@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tokimeki design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダーエリアとロゴ -->
+    <header class="site-header">
+        <a href="#" class = "logo-link">
+            <img src="logo.svg" alt="tokimeki design logo" class="site-logo">
+        </a>
+        <nav class="sticky-nav">
+            <a href="#introduction">Introduction</a>
+            <a href="#works">WORKS</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Let's create<br>tokimeki designs together</h1>
+
+        <section id="Introduction" class="section-block">
+            <h2 class="section-title">Introduction</h2>
+            <p>こんにちは、田原　彩夏です。</p><p>出身は広島で、現在は愛媛に住んでいます。
+                WEBデザインを独学し、現在もデザインからコーディングまで勉強しています！</p>
+            <p>見た人が少し笑顔になる、そんなWEBサイトを目指しています</p>
+        </section>
+
+        <section id="works" class="section-block">
+            <h2 class="section-title">WORKS</h2>
+            実績はまだありませんが、今後作成したものをここに載せていく予定です
+        </section>
+
+        <section id="gallery" class="section-block">
+            <h2 class="section-title">GALLERY</h2>
+            <p>coming soon...</p>
+        </section>
+
+        <section id="contact" class="section-block">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="contact-lead">一緒にときめくWEBサイトを創りませんか？<br>ご依頼やご相談など、お気軽にお問い合わせください</p>
+
+            <!--お問い合わせフォーム-->
+            <form action="https://formspree.io/f/mljrwwzz" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <!-- 依頼内容（自由記述） -->
+                <div class="form-group">
+                    <label for="message">ご依頼・ご相談内容 <span class="required">必須</span></label>
+                    <textarea id="message" name="message" rows="6" placeholder="作成したいWEBサイトのイメージやご予算、納期など、自由にご記入ください。" required></textarea>
+                </div>
+
+                <div class="form-btn-wrapper">
+                    <button type="submit" class="submit-btn">送信する</button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px 0; font-size: 12px; color: #aaa;">
+        <p>&copy; tokimeki design All Right Reserved.</p>
+    </footer>
+</body>  
